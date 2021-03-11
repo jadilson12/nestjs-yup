@@ -36,14 +36,14 @@ Integrate `Yup` with `Nest.js`.
 - Use the decorator `UseSchema`.
 
 ```ts
-import { UseSchema } from 'nestjs-yup';
+import { UseSchema } from 'nestjs-yup2';
 ```
 
 For example:
 
 ```ts
 import * as yup from 'yup';
-import { UseSchema } from 'nestjs-yup';
+import { UseSchema } from 'nestjs-yup2';
 
 export const authSchema = yup.object({
   username: yup.string().required().min(4).max(20),
@@ -69,7 +69,7 @@ export class AuthCredentialsDto {
 #### In Controller file
 
 ```ts
-import { YupValidationPipe } from 'nestjs-yup';
+import { YupValidationPipe } from 'nestjs-yup2';
 ```
 
 For example:
